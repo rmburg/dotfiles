@@ -26,6 +26,7 @@ alias pacman="pacman --color=auto"
 alias grupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias sudo="sudo "
+alias update="paru -Syu --devel && flatpak update"
 
 # Keybinds
 bindkey "^[[1;5C" forward-word
@@ -34,7 +35,8 @@ bindkey '^H' backward-kill-word
 bindkey ';5~' kill-word 
 
 # Variables
-export PATH=$PATH:/home/rasmus/.local/bin
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.cargo/bin
 
 # Powerline
 powerline-daemon -q
