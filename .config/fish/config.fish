@@ -28,3 +28,7 @@ end
 fish_add_path ~/.local/bin
 fish_add_path ~/.cargo/bin
 set fzf_preview_dir_cmd exa --all --color=always
+set -g -x GPG_TTY (tty)
+
+string match -q "$TERM_PROGRAM" "vscode"
+and . (code --locate-shell-integration-path fish)
