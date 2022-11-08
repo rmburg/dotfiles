@@ -5,6 +5,7 @@
 [user]
 	name = Narcha
 	email = 42248344+Narcha@users.noreply.github.com
+	signingkey = D8A068FBD60270D2
 
 [credential]
 	helper = store
@@ -21,3 +22,5 @@
 
 [diff]
     colorMoved = default
+[commit]
+	gpgsign = true
