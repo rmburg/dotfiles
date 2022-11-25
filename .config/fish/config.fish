@@ -1,10 +1,8 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
 
-    # Powerline
-    powerline-daemon -q
-    set fish_function_path $fish_function_path "/usr/share/powerline/bindings/fish"
-    powerline-setup
+    # Starship prompt
+    starship init fish | source
 
     bind \b backward-kill-word
 end
