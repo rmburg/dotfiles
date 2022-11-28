@@ -15,12 +15,6 @@ alias diff="diff --color=auto"
 alias ip="ip -color=auto"
 alias pacman="pacman --color=auto"
 alias grupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-
-# alias update="paru -Syu --devel && flatpak update"
-function update --description 'Update packages from the repos, the AUR and Flatpak'
-    paru -Syu --devel && flatpak update
-end
 
 # Variables
 fish_add_path ~/.local/bin
@@ -30,3 +24,4 @@ set -g -x GPG_TTY (tty)
 
 string match -q "$TERM_PROGRAM" "vscode"
 and . (code --locate-shell-integration-path fish)
+
