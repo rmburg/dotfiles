@@ -1,0 +1,52 @@
+ignore-empty-password
+font=Fira Sans
+
+image=$HOME/.config/wallpaper.png
+
+clock
+timestr=%R
+datestr=%a, %e. %B
+
+fade-in=0.2
+
+effect-blur=30x2
+effect-scale=0.5
+
+indicator
+indicator-radius=240
+indicator-thickness=15
+
+# 'Lavender' color of the catppuccin-macchiato palette
+key-hl-color=b7bdf8
+
+# 'Red' color of the catppuccin-macchiato palette
+bs-hl-color=f38ba8
+
+separator-color=00000000
+
+# 'Crust' color of the catppuccin-macchiato palette
+inside-color=181926
+inside-clear-color=181926
+inside-caps-lock-color=181926
+inside-ver-color=181926
+inside-wrong-color=181926
+
+# 'Base' color of the catppuccin-macchiato palette
+ring-color=24273a
+ring-clear-color=24273a
+ring-caps-lock-color=24273a
+ring-ver-color=24273a
+ring-wrong-color=24273a
+
+line-uses-ring
+
+# 'Text' color of the catppuccin-macchiato palette
+text-color=cad3f5
+text-clear-color=cad3f5
+
+# 'Yellow' color of the catppuccin-macchiato palette
+text-ver-color=eed49f
+
+# 'Red' color of the catppuccin-macchiato palette
+text-wrong-color=ed8796
+
