@@ -17,6 +17,7 @@
     navigate = true  # use n and N to move between diff sections
     line-numbers = true
     side-by-side = true
+    syntax-theme = Catppuccin-macchiato
 
 [merge]
     conflictstyle = diff3
