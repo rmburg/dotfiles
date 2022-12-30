@@ -99,5 +99,9 @@
   "diffEditor.maxComputationTime": 0,
   "vsicons.dontShowNewVersionMessage": true,
   "rust-analyzer.checkOnSave.command": "clippy",
-  "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial"
+  "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial",
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "catppuccin.italicKeywords": false,
+  "catppuccin.accentColor": "blue",
+  "catppuccin.boldKeywords": false
 }
