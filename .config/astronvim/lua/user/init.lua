@@ -1,5 +1,8 @@
 local config = {
   options = {
+    g = {
+      vimtex_view_method = "zathura"
+    },
     opt = {
       wrap = true, -- wrap long lines
       whichwrap = "b,s,<,>,h,l,[,]", -- cursor wrap
@@ -19,6 +22,12 @@ local config = {
       ["iamcco/markdown-preview.nvim"] = {
         run = function()
           vim.fn["mkdp#util#install"]()
+        end,
+      },
+      ["lervag/vimtex"] = {},
+      ["declancm/cinnamon.nvim"] = {
+        config = function()
+          require("cinnamon").setup()
         end,
       }
     },
