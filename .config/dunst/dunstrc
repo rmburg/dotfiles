@@ -1,0 +1,21 @@
+[global]
+frame_color = "#8AADF4"
+frame_width = 2
+separator_color = frame
+corner_radius = 5
+font = "Fira Sans 14"
+offset = 10x10
+width = 400
+
+[urgency_low]
+background = "#24273A"
+foreground = "#CAD3F5"
+
+[urgency_normal]
+background = "#24273A"
+foreground = "#CAD3F5"
+
+[urgency_critical]
+background = "#24273A"
+foreground = "#CAD3F5"
+frame_color = "#F5A97F"
