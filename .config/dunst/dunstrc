@@ -6,6 +6,9 @@ corner_radius = 5
 font = "Fira Sans 14"
 offset = 10x10
 width = 400
+dmenu = "/usr/bin/rofi -dmenu -i"
+mouse_left_click = do_action
+mouse_right_click = close_current
 
 [urgency_low]
 background = "#24273A"
