@@ -9,6 +9,8 @@ width = 400
 dmenu = "/usr/bin/rofi -dmenu -i"
 mouse_left_click = do_action
 mouse_right_click = close_current
+notification_limit = 0
+progress_bar = true
 
 [urgency_low]
 background = "#24273A"

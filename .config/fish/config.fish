@@ -1,3 +1,6 @@
+# Launch Hyprland on tty1 after login
+[ "$(tty)" = "/dev/tty1" ] && exec dbus-launch --exit-with-session Hyprland &> /dev/null
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
 
