@@ -5,7 +5,7 @@
 [user]
 	name = Narcha
 	email = 42248344+Narcha@users.noreply.github.com
-	signingkey = D8A068FBD60270D2
+	signingkey = 584EB9E7510C84A8
 
 [credential]
 	helper = store
