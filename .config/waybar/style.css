@@ -1,0 +1,113 @@
+@import "macchiato.css";
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: Fira Code Nerd Font;
+  font-weight: bold;
+  font-size: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+tooltip {
+  background: @base;
+  border-radius: 10px;
+  border: 2px solid @crust;
+}
+
+#workspaces button {
+  padding: 5px;
+  color: @overlay1;
+  background: @base;
+  margin-right: 5px;
+}
+
+#workspaces button.active {
+  color: @text;
+}
+
+#workspaces button.urgent {
+  color: @red;
+  border-radius: 10px;
+}
+
+#workspaces button:hover {
+  color: @text;
+  background: @base;
+  box-shadow: inherit;
+  text-shadow: inherit;
+}
+
+#custom-power,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#workspaces,
+#tray,
+#backlight {
+  background: @base;
+  padding: 0px 10px;
+  margin: 3px 0px;
+  border: 2px solid @overlay0;
+}
+
+#tray {
+  border-radius: 10px;
+  margin-right: 4px;
+}
+
+#workspaces {
+  border-radius: 10px;
+  padding-right: 0px;
+  padding-left: 5px;
+  margin-left: 2px;
+}
+
+#window {
+  color: @text;
+}
+
+#clock {
+  color: @yellow;
+  border-left: unset;
+  border-radius: 0 10px 10px 0;
+  margin-right: 2px;
+}
+
+#network {
+  color: @peach;
+  border-radius: 10px 0px 0px 10px;
+  padding-right: 12px;
+  border-right: unset;
+}
+
+#bluetooth {
+  color: @peach;
+  border-right: unset;
+  border-left: unset;
+}
+
+#backlight{
+  color: @mauve;
+  border-right: unset;
+  border-left: unset;
+}
+
+#pulseaudio {
+  color: @blue;
+  border-right: unset;
+  border-left: unset;
+}
+
+#battery{
+  color: @green;
+  border-right: unset;
+  border-left: unset;
+}
+
