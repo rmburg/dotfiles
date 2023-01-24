@@ -71,6 +71,7 @@ tooltip {
 
 #window {
   color: @text;
+  padding: 8px;
 }
 
 #clock {
