@@ -29,7 +29,8 @@ local config = {
         config = function()
           require("cinnamon").setup()
         end,
-      }
+      },
+      ["simrat39/rust-tools.nvim"] = {}
     },
     cmp = {
       sources = {
