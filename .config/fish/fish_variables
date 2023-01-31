@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR EDITOR:micro
+SETUVAR --export EDITOR:nvim
+SETUVAR --export QT_QPA_PLATFORMTHEME:qt5ct
 SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_ga:git\x20add
