@@ -39,6 +39,7 @@
 
 !.config/bat/
 !.config/bat/**/*
+.config/bat/**/*.thTheme
 
 !.config/btop/
 !.config/btop/btop.conf
