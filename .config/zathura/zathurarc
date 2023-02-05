@@ -1,2 +1,8 @@
 include catppuccin-macchiato
 
+# Disable status bar
+set guioptions ""
+
+set recolor-keephue true
+
+set font "Fira Code Nerd Font 10"
