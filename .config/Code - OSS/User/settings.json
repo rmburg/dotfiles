@@ -1,7 +1,7 @@
 {
   "editor.codeLensFontFamily": "'FiraCode Nerd Font Mono'",
   "editor.cursorBlinking": "phase",
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.fontFamily": "'FiraCode Nerd Font Mono'",
   "editor.fontLigatures": true,
   "editor.guides.bracketPairs": "active",
@@ -13,7 +13,7 @@
   "editor.unicodeHighlight.invisibleCharacters": false,
   "breadcrumbs.enabled": true,
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "catppuccin-macchiato",
   "workbench.colorCustomizations": {
     "[Default Dark+]": {
       "editorInlayHint.background": "#ffffff00",
@@ -103,5 +103,7 @@
   "workbench.colorTheme": "Catppuccin Macchiato",
   "catppuccin.italicKeywords": false,
   "catppuccin.accentColor": "blue",
-  "catppuccin.boldKeywords": false
+  "catppuccin.boldKeywords": false,
+  "catppuccin.workbenchMode": "flat",
+  "zenMode.hideLineNumbers": false
 }
