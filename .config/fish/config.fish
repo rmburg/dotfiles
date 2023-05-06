@@ -9,6 +9,7 @@ if status is-interactive
 
     # Starship prompt
     starship init fish | source
+    zoxide init fish | source
 
     bind \b backward-kill-word
 end
