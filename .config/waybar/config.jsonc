@@ -30,8 +30,8 @@
   },
   "backlight":{
     "device": "intel_backlight",
-    "format": "{icon} {percent}%",
-    "format-icons": ["","",""],
+    "format": "{icon}  {percent}%",
+    "format-icons": ["󰃞","󰃟","󰃠"],
     "on-scroll-up": "brightnessctl set 1%+",
     "on-scroll-down": "brightnessctl set 1%-",
     "min-length": 6 
@@ -46,17 +46,17 @@
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
     "format-time": "({H}:{M})",
-    "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
   },
   "clock": {
-    "format": "{: %H:%M %p   %d.%m.}",
+    "format": "{:  %H:%M %p    %d.%m.}",
     "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "network": {
-    "format-wifi": "直 {essid}",
-    "format-ethernet": " {ifname}",
-    "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "睊 Disconnected",
+    "format-wifi": "󰖩 {essid}",
+    "format-ethernet": "󰈀 {ifname}",
+    "format-linked": "󱚵 {ifname} (No IP)",
+    "format-disconnected": "󰖪 Disconnected",
     "tooltip-format-wifi": "Signal Strength: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
   },
   "pulseaudio": {
@@ -71,7 +71,7 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", "墳", ""]
+      "default": ["", "", "󰕾", ""]
     }
   }
 }
