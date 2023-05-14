@@ -62,3 +62,6 @@
 
 !.config/qt5ct/
 !.config/qt5ct/**/*
+
+!.config/rofi/
+!.config/rofi/**/*
