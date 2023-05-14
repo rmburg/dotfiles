@@ -59,6 +59,9 @@
     "format-disconnected": "󰖪 Disconnected",
     "tooltip-format-wifi": "Signal Strength: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
   },
+  "bluetooth": {
+    "on-click": "blueman-manager",
+  },
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "format-muted": " Muted",
