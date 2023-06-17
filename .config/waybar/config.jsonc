@@ -43,8 +43,8 @@
       "critical": 20
     },
     "format": "{icon} {capacity}%",
-    "format-charging": " {capacity}%",
-    "format-plugged": " {capacity}%",
+    "format-charging": "  {capacity}%",
+    "format-plugged": "  {capacity}%",
     "format-time": "({H}:{M})",
     "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
   },
@@ -53,10 +53,10 @@
     "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "network": {
-    "format-wifi": "󰖩 {essid}",
-    "format-ethernet": "󰈀 {ifname}",
-    "format-linked": "󱚵 {ifname} (No IP)",
-    "format-disconnected": "󰖪 Disconnected",
+    "format-wifi": "󰖩  {essid}",
+    "format-ethernet": "󰈀  {ifname}",
+    "format-linked": "󱚵  {ifname} (No IP)",
+    "format-disconnected": "󰖪  Disconnected",
     "tooltip-format-wifi": "Signal Strength: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
   },
   "bluetooth": {
@@ -68,13 +68,13 @@
     "scroll-step": 1,
     "on-click": "pavucontrol",
     "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": ["", "", "󰕾", ""]
+      "headphone": " ",
+      "hands-free": " ",
+      "headset": " ",
+      "phone": " ",
+      "portable": " ",
+      "car": " ",
+      "default": [" ", " ", "󰕾 ", " "]
     }
   }
 }
