@@ -65,3 +65,7 @@
 
 !.config/rofi/
 !.config/rofi/**/*
+
+!.config/helix/
+!.config/helix/**/*
+
