@@ -1,8 +1,8 @@
 {
-  "editor.codeLensFontFamily": "'FiraCode Nerd Font Mono'",
+  "editor.codeLensFontFamily": "FiraCode Nerd Font Med",
   "editor.cursorBlinking": "phase",
-  "editor.cursorSmoothCaretAnimation": true,
-  "editor.fontFamily": "'FiraCode Nerd Font Mono'",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontFamily": "FiraCode Nerd Font Med",
   "editor.fontLigatures": true,
   "editor.guides.bracketPairs": "active",
   "editor.inlayHints.fontSize": 12,
@@ -45,7 +45,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[rust]": {
-    "editor.defaultFormatter": "jinxdash.prettier-rust"
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "latex-workshop.view.pdf.viewer": "tab",
   "security.workspace.trust.untrustedFiles": "open",
@@ -98,6 +98,9 @@
   "typescript.inlayHints.variableTypes.enabled": true,
   "diffEditor.maxComputationTime": 0,
   "vsicons.dontShowNewVersionMessage": true,
-  "rust-analyzer.checkOnSave.command": "clippy",
-  "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial"
+  "rust-analyzer.check.command": "clippy",
+  "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial",
+  "zenMode.hideLineNumbers": false,
+  "github.gitProtocol": "ssh",
+  "editor.formatOnSave": true
 }
