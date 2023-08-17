@@ -1,10 +1,8 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
 
-    # Powerline
-    powerline-daemon -q
-    set fish_function_path $fish_function_path "/usr/share/powerline/bindings/fish"
-    powerline-setup
+    starship init fish | source
+    zoxide init fish | source
 
     bind \b backward-kill-word
 end
@@ -17,7 +15,6 @@ alias diff="diff --color=auto"
 alias ip="ip -color=auto"
 alias pacman="pacman --color=auto"
 alias grupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 # alias update="paru -Syu --devel && flatpak update"
 function update --description 'Update packages from the repos, the AUR and Flatpak'
