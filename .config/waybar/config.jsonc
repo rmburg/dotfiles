@@ -3,11 +3,11 @@
   "position": "top", 
   "height": 38,
   
-  "modules-left":   ["wlr/workspaces"],
+  "modules-left":   ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right":  ["tray", "network", "bluetooth", "backlight", "pulseaudio", "battery", "clock"],
+  "modules-right":  ["tray", "backlight", "pulseaudio", "battery", "clock"],
 
-  "wlr/workspaces": {
+  "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
     "on-click": "activate",
@@ -28,10 +28,21 @@
     "icon-size": 13,
     "spacing": 10
   },
+  "mpris": {
+	  "format": "{player_icon} {title} - {artist}",
+	  "player-icons": {
+		  "default": "",
+		  "spotify": " "
+	  },
+	  "status-icons": {
+		  "playing": " ",
+		  "paused": " "
+	  },
+  },
   "backlight":{
     "device": "intel_backlight",
-    "format": "{icon}  {percent}%",
-    "format-icons": ["󰃞","󰃟","󰃠"],
+    "format": "{icon} {percent}%",
+    "format-icons": ["󰃞 ","󰃟 ","󰃠 "],
     "on-scroll-up": "brightnessctl set 1%+",
     "on-scroll-down": "brightnessctl set 1%-",
     "min-length": 6 
@@ -51,16 +62,6 @@
   "clock": {
     "format": "{:  %H:%M %p    %d.%m.}",
     "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
-  },
-  "network": {
-    "format-wifi": "󰖩  {essid}",
-    "format-ethernet": "󰈀  {ifname}",
-    "format-linked": "󱚵  {ifname} (No IP)",
-    "format-disconnected": "󰖪  Disconnected",
-    "tooltip-format-wifi": "Signal Strength: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
-  },
-  "bluetooth": {
-    "on-click": "blueman-manager",
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",

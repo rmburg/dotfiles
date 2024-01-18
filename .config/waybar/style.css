@@ -1,12 +1,12 @@
 @import "macchiato.css";
 
 * {
-  border: none;
+  /* border: none; */
   border-radius: 0;
   font-family: Fira Sans, FiraCode Nerd Font;
   font-weight: bold;
   font-size: 14px;
-  min-height: 0;
+  /* min-height: 0; */
 }
 
 window#waybar {
@@ -19,11 +19,43 @@ tooltip {
   border: 2px solid @crust;
 }
 
+#clock,
+#battery,
+#pulseaudio,
+#workspaces,
+#tray,
+#mpris,
+#backlight {
+  background: @base;
+  padding: 0px 10px;
+  margin: 3px 0px;
+  border: 2px solid @overlay0;
+}
+
+#pulseaudio,
+#battery {
+  border-right: unset;
+  border-left: unset;
+}
+
+#workspaces {
+  border-radius: 10px;
+  padding: 0 5px;
+  /* match the 2px gap around normal windows */
+  margin-left: 2px;
+}
+
 #workspaces button {
-  padding: 5px;
+  padding: 0 5px;
+  /* min-width: 8px; */
+  /* min-height: 8px; */
+  /* border: 1px solid red; */
   color: @overlay1;
   background: @base;
-  margin-right: 5px;
+}
+
+#workspaces button.empty {
+  color: @surface1;
 }
 
 #workspaces button.active {
@@ -32,41 +64,14 @@ tooltip {
 
 #workspaces button.urgent {
   color: @red;
-  border-radius: 10px;
 }
 
 #workspaces button:hover {
   color: @text;
   background: @base;
+  /* prevent the default button highlight */
   box-shadow: inherit;
   text-shadow: inherit;
-}
-
-#custom-power,
-#clock,
-#battery,
-#pulseaudio,
-#network,
-#bluetooth,
-#workspaces,
-#tray,
-#backlight {
-  background: @base;
-  padding: 0px 10px;
-  margin: 3px 0px;
-  border: 2px solid @overlay0;
-}
-
-#tray {
-  border-radius: 10px;
-  margin-right: 4px;
-}
-
-#workspaces {
-  border-radius: 10px;
-  padding-right: 0px;
-  padding-left: 5px;
-  margin-left: 2px;
 }
 
 #window {
@@ -74,41 +79,38 @@ tooltip {
   padding: 8px;
 }
 
-#clock {
-  color: @yellow;
-  border-left: unset;
-  border-radius: 0 10px 10px 0;
-  margin-right: 2px;
+#tray {
+  border-radius: 10px;
+  margin-right: 4px;
 }
 
-#network {
+#mpris {
+  border-radius: 10px;
+  margin-right: 4px;
   color: @peach;
-  border-radius: 10px 0px 0px 10px;
-  padding-right: 12px;
-  border-right: unset;
-}
-
-#bluetooth {
-  color: @peach;
-  border-right: unset;
-  border-left: unset;
 }
 
 #backlight{
   color: @mauve;
+
+  border-radius: 10px 0px 0px 10px;
   border-right: unset;
-  border-left: unset;
 }
 
 #pulseaudio {
   color: @blue;
-  border-right: unset;
-  border-left: unset;
 }
 
 #battery{
   color: @green;
-  border-right: unset;
+}
+
+#clock {
+  color: @yellow;
+
   border-left: unset;
+  border-radius: 0 10px 10px 0;
+  /* match the 2px gap around normal windows */
+  margin-right: 2px;
 }
 
