@@ -3,6 +3,7 @@ theme = "catppuccin_macchiato"
 [editor]
 bufferline = "multiple"
 color-modes = true
+auto-format = true
 
 [editor.soft-wrap]
 enable = true
@@ -11,4 +12,7 @@ enable = true
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[editor.lsp]
+display-messages = true
 
