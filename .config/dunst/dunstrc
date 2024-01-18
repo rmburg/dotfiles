@@ -5,6 +5,7 @@ separator_color = frame
 corner_radius = 5
 font = "Fira Sans 14"
 offset = 10x10
+origin = bottom-right
 width = 400
 dmenu = "/usr/bin/rofi -dmenu -i"
 mouse_left_click = do_action
