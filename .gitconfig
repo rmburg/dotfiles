@@ -1,6 +1,5 @@
 [core]
-    editor = nvim
-    pager = delta
+	editor = hx
 
 [user]
 	name = Narcha
@@ -10,20 +9,11 @@
 [credential]
 	helper = store
 
-[interactive]
-    diffFilter = delta --color-only
-
-[delta]
-    navigate = true  # use n and N to move between diff sections
-    line-numbers = true
-    side-by-side = true
-    syntax-theme = Catppuccin-macchiato
-
 [merge]
-    conflictstyle = diff3
+	conflictstyle = diff3
 
 [diff]
-    colorMoved = default
+	external = difft
 
 [commit]
 	gpgsign = true
