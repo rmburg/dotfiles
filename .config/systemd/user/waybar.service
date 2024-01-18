@@ -1,0 +1,17 @@
+[Unit]
+Description=Highly customizable Wayland bar for Sway and Wlroots based compositors.
+Documentation=https://github.com/Alexays/Waybar/wiki/
+BindsTo=hyprland-session.target
+Requisite=hyprland-session.target
+
+Wants=nm-applet.service \
+	blueman-applet.service \
+	nextcloud.service
+Before=nm-applet.service \
+	blueman-applet.service \
+	nextcloud.service
+
+[Service]
+ExecStart=/usr/bin/waybar
+ExecReload=kill -SIGUSR2 $MAINPID
+Restart=on-failure

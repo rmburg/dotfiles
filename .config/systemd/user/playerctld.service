@@ -1,0 +1,9 @@
+[Unit]
+Description=Keep track of media player activity
+BindsTo=hyprland-session.target
+Requisite=hyprland-session.target
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/playerctld
+Restart=on-failure

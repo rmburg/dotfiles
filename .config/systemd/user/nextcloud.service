@@ -1,0 +1,10 @@
+[Unit]
+Description=Nextcloud Desktop Client
+BindsTo=hyprland-session.target
+Requisite=hyprland-session.target
+
+[Service]
+Type=exec
+ExecStart=nextcloud --background
+Restart=on-failure
+

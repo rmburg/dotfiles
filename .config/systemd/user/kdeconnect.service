@@ -1,0 +1,9 @@
+[Unit]
+Description=KDE Connect daemon
+BindsTo=hyprland-session.target
+Requisite=hyprland-session.target
+
+[Service]
+Type=exec
+ExecStart=/usr/lib/kdeconnectd
+Restart=on-failure

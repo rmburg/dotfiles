@@ -1,0 +1,10 @@
+[Unit]
+Description=NetworkManager Applet
+BindsTo=hyprland-session.target
+After=hyprland-session.target
+Requisite=hyprland-session.target
+
+[Service]
+Type=exec
+ExecStart=nm-applet
+
