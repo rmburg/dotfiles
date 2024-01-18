@@ -69,3 +69,6 @@
 !.config/helix/
 !.config/helix/**/*
 
+!.config/systemd/
+!.config/systemd/**/*
+
