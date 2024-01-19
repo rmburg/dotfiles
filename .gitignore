@@ -3,12 +3,15 @@
 
 !.gitignore
 !.gitconfig
+!.gitattributes
 
 !.icons
 !.icons/**/*
 
 !.config
 .config/*
+
+!.config/wallpaper.png
 
 !.config/starship.toml
 
