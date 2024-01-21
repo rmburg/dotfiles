@@ -76,3 +76,6 @@
 !.config/systemd/
 !.config/systemd/**/*
 
+!.config/wlogout/
+!.config/wlogout/**/*
+
