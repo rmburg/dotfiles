@@ -9,5 +9,6 @@ Wants=graphical-session-pre.target \
 	swayidle.service \
 	polkit-gnome.service \
 	playerctld.service \
-	kdeconnect.service
+	kdeconnect.service \
+	kdeconnect-indicator.service
 
