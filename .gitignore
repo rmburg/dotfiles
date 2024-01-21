@@ -51,10 +51,11 @@
 !.config/cava/**/*
 
 !.config/gtk-3.0/
-!.config/gtk-3.0/settings.ini
+!.config/gtk-3.0/*
+.config/gtk-3.0/bookmarks
 
 !.config/gtk-4.0/
-!.config/gtk-4.0/settings.ini
+!.config/gtk-4.0/*
 
 !.config/dunst/
 !.config/dunst/dunstrc
