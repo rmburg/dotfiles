@@ -15,8 +15,11 @@ alias diff="diff --color=auto"
 alias ip="ip -color=auto"
 alias pacman="pacman --color=auto"
 alias grupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias s="kitty +kitten ssh"
 
-# alias update="paru -Syu --devel && flatpak update"
+abbr -a t tldr
+abbr -a m batman
+
 function update --description 'Update packages from the repos, the AUR and Flatpak'
     paru -Syu --devel && flatpak update
 end
@@ -29,3 +32,4 @@ set -g -x GPG_TTY (tty)
 
 string match -q "$TERM_PROGRAM" "vscode"
 and . (code --locate-shell-integration-path fish)
+
