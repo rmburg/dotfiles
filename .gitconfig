@@ -1,5 +1,5 @@
 [core]
-	editor = helix
+	editor = hx
 
 [user]
 	name = Narcha
@@ -12,8 +12,8 @@
 [merge]
 	conflictstyle = diff3
 
-[diff]
-	external = difft
+# [diff]
+# 	external = difft
 
 [commit]
 	gpgsign = true
