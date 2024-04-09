@@ -60,7 +60,7 @@
     "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
   },
   "clock": {
-    "format": "{:  %H:%M %p    %d.%m.}",
+    "format": "  {:%H:%M    %d.%m.}",
     "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "pulseaudio": {
