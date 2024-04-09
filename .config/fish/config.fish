@@ -21,10 +21,12 @@ alias llt="eza -laT"
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
 alias ip="ip -color=auto"
+alias s="kitty +kitten ssh"
 
 # Variables
 fish_add_path ~/.local/bin
 fish_add_path ~/.cargo/bin
+fish_add_path ~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/
 set fzf_preview_dir_cmd eza --all --color=always
 set -g -x GPG_TTY (tty)
 
@@ -33,6 +35,9 @@ set -x EDITOR hx
 string match -q "$TERM_PROGRAM" "vscode"
 and . (code --locate-shell-integration-path fish)
 
-abbr -a -- h helix
+#Abbreviations
 abbr -a -- m batman
+abbr -a -- t tldr
+
+# Git abbreviations
 abbr -a -- grsh git remote show
