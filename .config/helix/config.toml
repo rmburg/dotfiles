@@ -3,8 +3,7 @@ theme = "catppuccin_macchiato"
 [editor]
 bufferline = "multiple"
 color-modes = true
-cursorline = true
-completion-replace = true
+auto-format = true
 
 [editor.soft-wrap]
 enable = true
