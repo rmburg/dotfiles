@@ -1,7 +1,17 @@
 [[language]]
+name = "cpp"
+auto-format = true
+
+[[language]]
 name = "typescript"
 auto-format = true
 
 [[language]]
 name = "tsx"
 auto-format = true
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+# extraArgs = ["--", "-W", "clippy::pedantic"]
+
+

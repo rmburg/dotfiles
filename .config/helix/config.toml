@@ -16,3 +16,7 @@ select = "underline"
 [editor.lsp]
 display-messages = true
 
+[keys.normal.space]
+w = ":update"
+q = ":quit"
+
