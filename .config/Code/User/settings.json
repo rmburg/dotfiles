@@ -1,6 +1,6 @@
 {
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -11,19 +11,18 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[postcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.detectIndentation": true,
-    "editor.insertSpaces": true,
     "editor.tabSize": 2
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.detectIndentation": true,
-    "editor.insertSpaces": true,
     "editor.tabSize": 2
   },
   "diffEditor.ignoreTrimWhitespace": false,
@@ -31,11 +30,13 @@
   "editor.codeLensFontFamily": "FiraCode Nerd Font Med",
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
+  "editor.detectIndentation": true,
   "editor.fontFamily": "FiraCode Nerd Font Med",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": "active",
   "editor.inlayHints.fontSize": 12,
+  "editor.insertSpaces": true,
   "editor.largeFileOptimizations": false,
   "editor.renderControlCharacters": true,
   "editor.renderWhitespace": "none",
@@ -65,4 +66,8 @@
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "newUntitledFile",
   "zenMode.hideLineNumbers": false
+  // "files.associations": {
+  //   "*.css": "css"
+  // },
+  // "css.lint.unknownAtRules": "ignore",
 }
