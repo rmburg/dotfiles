@@ -9,13 +9,17 @@ end
 
 # Aliases
 alias ls="ls --color=auto"
-alias ll="exa -la"
+alias ll="eza -la"
+alias llt="eza -laT"
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
 alias ip="ip -color=auto"
 alias pacman="pacman --color=auto"
 alias grupdate="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias s="kitty +kitten ssh"
+
+abbr -a gstau git stash push -u
+abbr -a gstas git stash push --staged
 
 abbr -a t tldr
 abbr -a m batman
