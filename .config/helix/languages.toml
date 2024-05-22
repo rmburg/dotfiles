@@ -5,13 +5,17 @@ auto-format = true
 [[language]]
 name = "typescript"
 auto-format = true
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
 
 [[language]]
 name = "tsx"
 auto-format = true
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
 
 [language-server.rust-analyzer.config.check]
 command = "clippy"
 # extraArgs = ["--", "-W", "clippy::pedantic"]
 
+[language-server.typst-lsp.config]
+experimentalFormatterMode = "on"
 
