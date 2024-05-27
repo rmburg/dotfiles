@@ -6,3 +6,5 @@ set guioptions ""
 set recolor-keephue true
 
 set font "Fira Code Nerd Font 10"
+
+set database sqlite
