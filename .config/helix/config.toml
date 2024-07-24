@@ -4,6 +4,11 @@ theme = "catppuccin_macchiato"
 bufferline = "multiple"
 color-modes = true
 auto-format = true
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
+other-lines = "error"
 
 [editor.soft-wrap]
 enable = true
@@ -28,4 +33,5 @@ c = ":buffer-close"
 [keys.normal.space]
 w = ":update"
 q = ":quit"
+A = [":insert-output co-author.sh", ":redraw"]
 
