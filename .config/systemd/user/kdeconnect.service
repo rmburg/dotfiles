@@ -5,5 +5,5 @@ Requisite=hyprland-session.target
 
 [Service]
 Type=exec
-ExecStart=/usr/lib/kdeconnectd
+ExecStart=/usr/bin/kdeconnectd
 Restart=on-failure
