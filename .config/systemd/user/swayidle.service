@@ -5,10 +5,9 @@ Requisite=hyprland-session.target
 
 [Service]
 Type=exec
-ExecStart=swayidle -w \
-	timeout 300 'swaylock -f --grace 5' \
-	timeout 360 'hyprctl dispatch dpms off' \
-	resume 'hyprctl dispatch dpms on' \
+ExecStart=swayidle -d -w \
+	timeout 300 'swaylock -f' \
+	timeout 900 'systemctl suspend' \
 	before-sleep 'playerctl pause; swaylock -f' \
 	lock 'swaylock -f'
 
