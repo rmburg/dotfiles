@@ -22,7 +22,7 @@ alias grep="grep --color=auto"
 alias diff="diff --color=auto"
 alias ip="ip -color=auto"
 alias s="kitty +kitten ssh"
-
+alias pluto='julia -e "using Pluto;Pluto.run()"'
 # Variables
 fish_add_path ~/.local/bin
 fish_add_path ~/.cargo/bin
@@ -35,10 +35,12 @@ set -x EDITOR hx
 string match -q "$TERM_PROGRAM" vscode
 and . (code --locate-shell-integration-path fish)
 
-#Abbreviations
+# Abbreviations
 abbr -a -- m batman
 abbr -a -- t tldr
 abbr -a -- ia ip -br a
+abbr -a -- ncu nmcli con up
+abbr -a -- ncd nmcli con down
 
 # Expand "...." to "../../../"
 function expand_dots
@@ -48,3 +50,6 @@ abbr -a dots --position anywhere --regex "\.{3,}" --function expand_dots
 
 # Git abbreviations
 abbr -a -- grsh git remote show
+abbr -a -- grsp git restore --patch
+abbr -a -- grstp git restore --staged --patch
+abbr -a -- gstas git stash push --staged
