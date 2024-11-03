@@ -13,7 +13,17 @@
 	conflictstyle = diff3
 
 [diff]
-	external = difft
+	external = difft --color=always
+	tool = difftastic
+
+[difftool]
+	prompt = false
+
+[difftool "difftastic"]
+	cmd = difft --color=always "$LOCAL" "$REMOTE"
+
+[pager]
+	difftool = true
 
 [commit]
 	gpgsign = true
@@ -26,3 +36,7 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+[pull]
+	rebase = true
+[branch]
+	sort = -committerdate
