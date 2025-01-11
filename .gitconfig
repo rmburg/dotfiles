@@ -2,15 +2,18 @@
 	editor = hx
 
 [user]
-	name = Narcha
-	email = 42248344+Narcha@users.noreply.github.com
-	signingkey = 584EB9E7510C84A8
+	name = Rasmus Mecklenburg
+	email = 42248344+rmburg@users.noreply.github.com
+	signingkey = FA515CAF1A69AC51
 
 [credential]
 	helper = store
 
 [merge]
 	conflictstyle = diff3
+
+[fetch]
+	parallel = 0
 
 [diff]
 	external = difft --color=always
