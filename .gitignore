@@ -11,8 +11,6 @@
 !.config
 .config/*
 
-!.config/wallpaper.png
-
 !.config/starship.toml
 
 !.config/fish/config.fish
