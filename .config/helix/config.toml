@@ -29,10 +29,14 @@ S-ret = ["open_above", "normal_mode"]
 c = ":buffer-close"
 
 [keys.normal.g]
-C-s = ["split_selection_on_newline", ":sort", "collapse_selection", "keep_primary_selection"]
+C-s = [
+  "split_selection_on_newline",
+  ":sort",
+  "collapse_selection",
+  "keep_primary_selection",
+]
 
 [keys.normal.space]
 w = ":update"
 q = ":quit"
 # A = [":insert-output co-author.sh", ":redraw"]
-

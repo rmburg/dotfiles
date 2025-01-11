@@ -37,4 +37,3 @@ previewFeature = "disable"
 [language-server.ruff]
 command = "ruff"
 args = ["server"]
-
