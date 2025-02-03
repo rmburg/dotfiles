@@ -49,6 +49,7 @@ end
 abbr -a dots --position anywhere --regex "\.{3,}" --function expand_dots
 
 # Git abbreviations
+abbr -a -- glra git pull --rebase --autostash
 abbr -a -- grsh git remote show
 abbr -a -- grsp git restore --patch
 abbr -a -- grstp git restore --staged --patch
