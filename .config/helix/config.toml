@@ -39,4 +39,7 @@ C-s = [
 [keys.normal.space]
 w = ":update"
 q = ":quit"
-# A = [":insert-output co-author.sh", ":redraw"]
+F = "file_picker_in_current_buffer_directory"
+E = "file_explorer_in_current_buffer_directory"
+A-f = "file_picker_in_current_directory"
+A-e = "file_explorer_in_current_directory"
