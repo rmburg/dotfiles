@@ -5,7 +5,7 @@
   
   "modules-left":   ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right":  ["tray", "backlight", "pulseaudio", "battery", "clock"],
+  "modules-right":  ["tray", "backlight", "pulseaudio", "battery", "idle_inhibitor", "clock"],
 
   "hyprland/workspaces": {
     "disable-scroll": true,
@@ -76,6 +76,13 @@
       "portable": " ",
       "car": " ",
       "default": [" ", " ", "󰕾 ", " "]
+    }
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": "",
+        "deactivated": ""
     }
   }
 }

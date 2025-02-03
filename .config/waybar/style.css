@@ -22,6 +22,7 @@ tooltip {
 #clock,
 #battery,
 #pulseaudio,
+#idle_inhibitor,
 #workspaces,
 #tray,
 #mpris,
@@ -33,6 +34,7 @@ tooltip {
 }
 
 #pulseaudio,
+#idle_inhibitor,
 #battery {
   border-right: unset;
   border-left: unset;
