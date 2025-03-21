@@ -3,8 +3,8 @@
 
 [user]
 	name = Narcha
-	email = 42248344+Narcha@users.noreply.github.com
-	signingkey = D8A068FBD60270D2
+	email = 42248344+rmburg@users.noreply.github.com
+	signingkey = 7916EA9AE87DD106
 
 [credential]
 	helper = store
