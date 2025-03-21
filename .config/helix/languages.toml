@@ -16,6 +16,7 @@ formatter = { command = "prettier", args = ["--parser", "typescript"] }
 command = "clippy"
 # extraArgs = ["--", "-W", "clippy::pedantic"]
 
-[language-server.typst-lsp.config]
-experimentalFormatterMode = "on"
+[language-server.tinymist.config]
+formatterMode = "typstyle"
+previewFeature = "disable"
 
