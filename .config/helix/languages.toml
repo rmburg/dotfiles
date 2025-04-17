@@ -3,14 +3,36 @@ name = "cpp"
 auto-format = true
 
 [[language]]
-name = "typescript"
+name = "javascript"
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+
+[[language]]
+name = "typescript"
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+auto-format = true
 
 [[language]]
 name = "tsx"
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+
+[[language]]
+name = "jsx"
+auto-format = true
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+
+[[language]]
+name = "json"
+language-servers = [ { name = "vscode-json-language-server", except-features = [ "format" ] }, "biome" ]
+
+[[language]]
+name = "jsonc"
+language-servers = [ { name = "vscode-json-language-server", except-features = [ "format" ] }, "biome" ]
+
+[[language]]
+name = "css"
+language-servers = [ { name = "vscode-css-language-server", except-features = [ "format" ] }, "biome" ]
 
 [language-server.rust-analyzer.config.check]
 command = "clippy"
@@ -19,4 +41,7 @@ command = "clippy"
 [language-server.tinymist.config]
 formatterMode = "typstyle"
 previewFeature = "disable"
+
+[language-server]
+biome = { command = "biome", args = ["lsp-proxy"] }
 
