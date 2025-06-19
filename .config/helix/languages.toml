@@ -34,6 +34,15 @@ language-servers = [ { name = "vscode-json-language-server", except-features = [
 name = "css"
 language-servers = [ { name = "vscode-css-language-server", except-features = [ "format" ] }, "biome" ]
 
+[[language]]
+name = "python"
+auto-format = true
+
+[[language]]
+name = "yaml"
+auto-format = true
+formatter = { command = "yamlfmt", args = [ "-formatter", "retain_line_breaks_single=true", "-" ] }
+
 [language-server.rust-analyzer.config.check]
 command = "clippy"
 # extraArgs = ["--", "-W", "clippy::pedantic"]
@@ -42,6 +51,7 @@ command = "clippy"
 formatterMode = "typstyle"
 previewFeature = "disable"
 
-[language-server]
-biome = { command = "biome", args = ["lsp-proxy"] }
+[language-server.biome]
+command = "biome"
+args = ["lsp-proxy"]
 

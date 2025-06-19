@@ -16,6 +16,11 @@ select = "underline"
 [editor.lsp]
 display-messages = true
 
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["version-control", "spacer", "file-name", "read-only-indicator", "file-modification-indicator"]
+right = ["diagnostics", "file-type", "selections", "register", "position", "position-percentage", "file-encoding"]
+
 [keys.normal]
 ret = ["open_below", "normal_mode"]
 
