@@ -2,7 +2,7 @@
 	editor = hx
 
 [user]
-	name = Narcha
+	name = rmburg
 	email = 42248344+rmburg@users.noreply.github.com
 	signingkey = 7916EA9AE87DD106
 
@@ -34,4 +34,6 @@
 	prompt = false
 
 [difftool "difftastic"]
-	cmd = difft "$LOCAL" "$REMOTE"
+	cmd = difft "$LOCAL" "$REMOTE" --color=always
+[push]
+	autoSetupRemote = true
