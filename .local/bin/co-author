@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+authors=$(git log --format="%aN <%aE>" | sort -u)
+
+echo "Co-authored-by: $(fzf <<< $authors)"

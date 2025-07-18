@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+case $1 in
+  full)
+    grim - | wl-copy
+    ;;
+  region)
+    grim -g "$(slurp)" - | wl-copy
+    ;;
+  *)
+    echo "Invalid argument, expected \"full\" or \"region\""
+    exit 1
+    ;;
+esac
