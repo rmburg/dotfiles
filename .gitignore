@@ -9,6 +9,12 @@
 !.icons
 !.icons/**/*
 
+!.local
+.local/*
+
+!.local/bin
+!.local/bin/*
+
 !.config
 .config/*
 
