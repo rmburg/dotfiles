@@ -1,0 +1,7 @@
+[user]
+	name = Rasmus Mecklenburg
+	email = rasmus.mecklenburg@tuhh.de
+
+[commit]
+	gpgsign = false
+
