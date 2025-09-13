@@ -15,7 +15,12 @@ formatter = { command = "prettier", args = ["--parser", "typescript"] }
 [[language]]
 name = "typst"
 auto-format = true
-language-servers = ["tinymist"]
+formatter = { command = "typstyle" }
+language-servers = ["tinymist", "harper-ls"]
+
+[[language]]
+name = "markdown"
+language-servers = ["markdown-oxide", "harper-ls"]
 
 [[language]]
 name = "python"
@@ -37,3 +42,7 @@ previewFeature = "disable"
 [language-server.ruff]
 command = "ruff"
 args = ["server"]
+
+[language-server.harper-ls]
+command = "harper-ls"
+args = ["--stdio"]
