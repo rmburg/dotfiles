@@ -8,6 +8,7 @@ Wants=graphical-session-pre.target \
 	kanshi.service \
 	waybar.service \
 	swayidle.service \
+	udiskie.service \
 	polkit-gnome.service \
 	playerctld.service \
 	kdeconnect.service \

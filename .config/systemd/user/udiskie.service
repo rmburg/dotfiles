@@ -1,0 +1,9 @@
+[Unit]
+Description=Udiskie automounter
+BindsTo=hyprland-session.target
+After=hyprland-session.target
+Requisite=hyprland-session.target
+
+[Service]
+ExecStart=udiskie --tray --no-file-manager --menu flat
+
