@@ -3,7 +3,7 @@
 
 !.gitignore
 !.gitconfig
-!.gitconfig-tuhh
+!.tuhh.gitconfig
 !.gitattributes
 
 !.icons

@@ -47,4 +47,4 @@
 	sort = -committerdate
 
 [includeIf "hasconfig:remote.*.url:git@collaborating.tuhh.de:*/**"]
-	path = ~/.gitconfig-tuhh
+	path = ~/.tuhh.gitconfig
