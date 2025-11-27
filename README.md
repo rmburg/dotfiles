@@ -2,7 +2,7 @@
 
 ```
 git init --bare ~/.dotfiles
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-config config status.showUntrackedFiles no
-config remote add origin git@github.com:Narcha/dotfiles.git
-config pull origin main
+alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+dot config status.showUntrackedFiles no
+dot remote add origin git@github.com:rmburg/dotfiles.git
+dot pull origin main
