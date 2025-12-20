@@ -77,7 +77,7 @@
 
 !.config/helix/
 !.config/helix/**/*
-.config/helix/runtime/
+.config/helix/runtime/grammars
 
 !.config/systemd/
 !.config/systemd/**/*
