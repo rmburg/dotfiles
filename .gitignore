@@ -6,9 +6,6 @@
 !.tuhh.gitconfig
 !.gitattributes
 
-!.icons
-!.icons/**/*
-
 !.local
 .local/*
 
