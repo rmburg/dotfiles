@@ -3,24 +3,46 @@ name = "cpp"
 auto-format = true
 
 [[language]]
-name = "typescript"
+name = "javascript"
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+
+[[language]]
+name = "typescript"
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+auto-format = true
 
 [[language]]
 name = "tsx"
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+
+[[language]]
+name = "jsx"
+auto-format = true
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+
+[[language]]
+name = "json"
+language-servers = [ { name = "vscode-json-language-server", except-features = [ "format" ] }, "biome" ]
+
+[[language]]
+name = "jsonc"
+language-servers = [ { name = "vscode-json-language-server", except-features = [ "format" ] }, "biome" ]
+
+[[language]]
+name = "css"
+language-servers = [ { name = "vscode-css-language-server", except-features = [ "format" ] }, "biome" ]
 
 [[language]]
 name = "typst"
 auto-format = true
 formatter = { command = "typstyle" }
-language-servers = ["tinymist", "harper-ls"]
+# language-servers = ["tinymist", "harper-ls"]
 
-[[language]]
-name = "markdown"
-language-servers = ["markdown-oxide", "harper-ls"]
+# [[language]]
+# name = "markdown"
+# language-servers = ["markdown-oxide", "harper-ls"]
 
 [[language]]
 name = "python"
@@ -31,6 +53,86 @@ auto-format = true
 name = "toml"
 auto-format = true
 
+[[language]]
+name = "yaml"
+auto-format = true
+formatter = { command = "yamlfmt", args = [ "-formatter", "retain_line_breaks_single=true", "-" ] }
+
+[[language]]
+name = "xml"
+file-types = [
+  "xml",
+  "mobileconfig",
+  "plist",
+  "xib",
+  "storyboard",
+  "svg",
+  "xsd",
+  "gml",
+  "xaml",
+  "gir",
+  "rss",
+  "atom",
+  "opml",
+  "policy",
+  "ascx",
+  "axml",
+  "axaml",
+  "bpmn",
+  "cpt",
+  "csl",
+  "csproj.user",
+  "dita",
+  "ditamap",
+  "dtml",
+  "fxml",
+  "iml",
+  "isml",
+  "jmx",
+  "launch",
+  "menu",
+  "mxml",
+  "nuspec",
+  "osc",
+  "osm",
+  "pt",
+  "publishsettings",
+  "pubxml",
+  "pubxml.user",
+  "rbxlx",
+  "rbxmx",
+  "rng",
+  "shproj",
+  "tld",
+  { glob = "*.tm[Tt]heme" },
+  "tmx",
+  "vbproj.user",
+  "vcxproj",
+  "vcxproj.filters",
+  "wsdl",
+  "wxi",
+  "wxs",
+  "xbl",
+  "xlf",
+  "xliff",
+  "xpdl",
+  "xul",
+  "xoml",
+  "musicxml",
+  "glif",
+  "ui",
+  "sublime-snippet",
+  "xsl",
+  "mpd",
+  "smil",
+  "gpx",
+  "fodt",
+  "fods",
+  "itermcolors",
+  "terminal",
+  { glob = ".project"}, # Added(rmburg)
+  { glob = ".cproject"}, # Added(rmburg)
+]
 [language-server.rust-analyzer.config.check]
 command = "clippy"
 # extraArgs = ["--", "-W", "clippy::pedantic"]
@@ -39,6 +141,10 @@ command = "clippy"
 formatterMode = "typstyle"
 previewFeature = "disable"
 
+[language-server.biome]
+command = "biome"
+args = ["lsp-proxy"]
+
 [language-server.ruff]
 command = "ruff"
 args = ["server"]
@@ -46,3 +152,17 @@ args = ["server"]
 [language-server.harper-ls]
 command = "harper-ls"
 args = ["--stdio"]
+
+# --- experimental ned support ---
+
+[[language]]
+name = "ned"
+scope = "source.ned"
+injection-regex = "ned"
+file-types = ["ned"]
+comment-tokens = "//"
+indent = { tab-width = 4, unit = "  " }
+
+[[grammar]]
+name = "ned"
+source = { git = "https://github.com/omnetpp/tree-sitter-ned.git", rev = "50df2820a6676bd5608eb75883a4a06096b83f01" }
