@@ -35,6 +35,7 @@ abbr -a -- t tldr
 abbr -a -- ia ip -br a
 abbr -a -- ncu nmcli con up
 abbr -a -- ncd nmcli con down
+abbr -a -- dfh df -h -x tmpfs -x devtmpfs -x efivarfs
 
 # Git abbreviations
 abbr -a -- glra git pull --rebase --autostash
