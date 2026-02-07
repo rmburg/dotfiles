@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# 1st argument: file path
+# 2nd argument: line number
+
+set -e
+
+blame=$(git blame --porcelain -L $2,+1 $1)
+
+author=$(echo "$blame" | rg "^author (.*)\$" -r "\$1")
+summary=$(echo "$blame" | rg "^summary (.*)\$" -r "\$1")
+author_time=$(echo "$blame" | rg "^author-time (.*)\$" -r "@\$1" | xargs date -I -d)
+
+echo $author $author_time $summary
