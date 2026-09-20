@@ -144,6 +144,9 @@ previewFeature = "disable"
 command = "biome"
 args = ["lsp-proxy"]
 
+[language-server.biome.config.inline_config]
+formatter = { useEditorconfig = true }
+
 [language-server.ruff]
 command = "ruff"
 args = ["server"]
