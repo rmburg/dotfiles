@@ -46,5 +46,15 @@
 [branch]
 	sort = -committerdate
 
+[push]
+	autoSetupRemote = true
+
+[rebase]
+	autoSquash = true
+
+[alias]
+	autosquash = !GIT_SEQUENCE_EDITOR=true git rebase -i --autosquash
+	fixup = !git log -n 20 --pretty=format:'%h %s' --no-merges | fzf | cut -c -7 | xargs -o git commit --fixup
+
 [includeIf "hasconfig:remote.*.url:git@collaborating.tuhh.de:*/**"]
 	path = ~/.tuhh.gitconfig
