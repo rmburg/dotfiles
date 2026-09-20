@@ -1,8 +1,8 @@
 [Unit]
 Description=KDE Connect Indicator
-BindsTo=hyprland-session.target
-After=hyprland-session.target
-Requisite=hyprland-session.target
+# BindsTo=hyprland-session.target
+# After=hyprland-session.target
+# Requisite=hyprland-session.target
 
 [Service]
 Type=exec

@@ -1,7 +1,7 @@
 [Unit]
 Description=KDE Connect daemon
-BindsTo=hyprland-session.target
-Requisite=hyprland-session.target
+# BindsTo=hyprland-session.target
+# Requisite=hyprland-session.target
 
 [Service]
 Type=exec
