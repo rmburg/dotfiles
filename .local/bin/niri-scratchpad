@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+
+if [ $# != "1" ]; then
+  echo "Expected exactly one argument (app ID)"
+  exit 1
+fi
+
+app_id="$1"
+
+focused_output=$(niri msg -j focused-output | jq -r '.name')
+current_workspace=$(niri msg -j focused-output | jq '.workspace_id')
+
+win_id=$(niri msg -j windows | jq ".[] | select(.app_id == \"$app_id\") .id")
+is_focused=$(niri msg -j windows | jq ".[] | select(.app_id == \"$app_id\").is_focused")
+
+if [ "$is_focused" = "false" ]; then
+  niri msg action move-window-to-monitor --id "$win_id" "$focused_output"
+  niri msg action move-window-to-workspace --window-id "$win_id" "$current_workspace"
+  niri msg action focus-window --id "$win_id"
+else
+  niri msg action move-window-to-workspace --window-id "$win_id" "scratchpad" --focus=false
+fi
+

@@ -30,6 +30,9 @@
 !.config/hypr/
 !.config/hypr/**/*
 
+!.config/niri/
+!.config/niri/**/*
+
 !.config/swaylock/
 !.config/swaylock/**/*
 

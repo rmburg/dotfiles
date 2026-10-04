@@ -1,0 +1,46 @@
+layout {
+    // Theme: Catppuccin Macchiato - blue
+    background-color "#24273a"
+
+    border {
+        on
+        width 2
+        active-color "#c6a0f6"
+        inactive-color "#6c7086"
+        urgent-color "#ed8796"
+    }
+
+    shadow {
+        off
+        softness 30
+        spread 5
+        offset x=0 y=5
+        draw-behind-window true
+        color "#1819264d"
+        inactive-color "#24273a4d"
+    }
+
+    tab-indicator {
+        on
+        hide-when-single-tab
+        place-within-column
+        gap 4
+        width 6
+        length total-proportion=1.0
+        position "right"
+        gaps-between-tabs 2
+        corner-radius 8
+        active-color "#c6a0f6"
+        inactive-color "#b7bdf8"
+        urgent-color "#ed8796"
+        active-gradient from="#c6a0f6" to="#8aadf4" angle=45
+        inactive-gradient from="#b7bdf8" to="#5b6078" angle=45 relative-to="workspace-view"
+        urgent-gradient from="#eed49f" to="#f5a97f" angle=45
+    }
+
+    insert-hint {
+        on
+        color "#f5a97f"
+        gradient from="#f5a97f" to="#8aadf4" angle=45 relative-to="workspace-view"
+    }
+}
