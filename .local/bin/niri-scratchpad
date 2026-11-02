@@ -17,7 +17,9 @@ if [ "$is_focused" = "false" ]; then
   niri msg action move-window-to-monitor --id "$win_id" "$focused_output"
   niri msg action move-window-to-workspace --window-id "$win_id" "$current_workspace"
   niri msg action focus-window --id "$win_id"
+  niri msg action center-window --id "$win_id"
 else
   niri msg action move-window-to-workspace --window-id "$win_id" "scratchpad" --focus=false
+  niri msg action center-window --id "$win_id"
 fi
 
