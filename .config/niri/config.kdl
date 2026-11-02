@@ -65,13 +65,13 @@ hotkey-overlay {
     skip-at-startup
 }
 
-workspace "password-manager"
+workspace "scratchpad"
 
 window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
 
     block-out-from "screen-capture"
-    open-on-workspace "password-manager"
+    open-on-workspace "scratchpad"
     open-floating true
     default-column-width { proportion 0.8; }
     default-window-height { proportion 0.8; }
