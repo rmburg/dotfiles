@@ -4,7 +4,7 @@
 [user]
 	name = Rasmus Mecklenburg
 	email = 42248344+rmburg@users.noreply.github.com
-	signingkey = FA515CAF1A69AC51
+	signingkey = /home/rasmus/.ssh/id_ed25519.pub
 
 [credential]
 	helper = store
@@ -58,3 +58,5 @@
 
 [includeIf "hasconfig:remote.*.url:git@collaborating.tuhh.de:*/**"]
 	path = ~/.tuhh.gitconfig
+[gpg]
+	format = ssh

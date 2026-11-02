@@ -44,3 +44,5 @@ function expand_dots
     string repeat "../" -n (math (string length $argv[1]) - 1)
 end
 abbr -a dots --position anywhere --regex "\.{3,}" --function expand_dots
+
+set -x SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
