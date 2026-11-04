@@ -93,6 +93,7 @@ binds {
     Mod+Q { close-window; }
 
     Mod+S   { focus-workspace 100; }
+    Mod+J   { move-window-to-workspace 100; }
     Mod+Tab { focus-workspace-previous; }
     Mod+Adiaeresis { switch-focus-between-floating-and-tiling; }
 
