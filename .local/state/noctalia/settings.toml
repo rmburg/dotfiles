@@ -335,11 +335,16 @@ enabled = [ "icefish/phone-connect" ]
 [shell]
 font_family = "Fira Sans"
 polkit_agent = true
+show_close_buttons = false
 
     [shell.panel]
     clipboard_placement = "attached"
     session_placement = "floating"
     session_position = "center"
+
+    [shell.window_switcher]
+    mru = true
+    style = "compact"
 
 [theme]
 builtin = "Catppuccin"
